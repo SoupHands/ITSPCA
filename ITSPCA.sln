@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSPCA", "ITSPCA.csproj", "{AAC4CA6A-DC3B-4773-80A9-9852236E7BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAC4CA6A-DC3B-4773-80A9-9852236E7BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC4CA6A-DC3B-4773-80A9-9852236E7BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC4CA6A-DC3B-4773-80A9-9852236E7BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC4CA6A-DC3B-4773-80A9-9852236E7BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86195737-BFC2-49A9-A258-B2C660220B99}
+	EndGlobalSection
+EndGlobal
