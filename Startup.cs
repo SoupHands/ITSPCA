@@ -1,23 +1,10 @@
-﻿using ITSPCA.Data;
-using Microsoft.EntityFrameworkCore;
-using static ITSPCA.Datas;
-using Microsoft.Extensions.Configuration;
-
+﻿using static ITSPCA.Datas;
 
 namespace ITSPCA
 
 {
-	
 	public class Startup
 	{
-		public IConfiguration Configuration { get; }
-
-		public Startup(IConfiguration configuration)
-		{
-			Configuration = configuration;
-		}
-
-
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     // ...
@@ -30,9 +17,6 @@ namespace ITSPCA
 }
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddDbContext<ApplicationDbContext>(options =>
-				options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
 			services.AddAuthorization(options =>
 			{
 				options.AddPolicy("Manager", policy => policy.RequireRole("Manager"));
