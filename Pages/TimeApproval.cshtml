@@ -1,0 +1,25 @@
+﻿
+
+@page
+@model TimeApproval
+
+<h1>Time Approval Page</h1>
+
+
+<table>
+    @foreach (var timesheet in Model.SubmittedTimesheets)
+    {
+        <tr>
+            <td>@timesheet.EmployeeName</td>
+            <td>@timesheet.WorkDate</td>
+            <td>
+                <form method="post">
+                    <input type="hidden" asp-for="timesheet.TimesheetId" />
+                    <button type="submit" name="action" value="approve">Approve</button>
+                    <button type="submit" name="action" value="modify">Modify</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+

@@ -7,7 +7,7 @@ namespace ITSPCA
 	{
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
-    // ...
+   
 
     using (var serviceScope = app.ApplicationServices.CreateScope())
     {
