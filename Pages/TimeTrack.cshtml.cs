@@ -1,6 +1,7 @@
 using ITSPCA.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Linq;
 
 namespace ITSPCA.Pages
 {
@@ -17,7 +18,7 @@ namespace ITSPCA.Pages
 		public IActionResult OnGet()
 		{
 			// get from DB (need to make DB)
-			var timesheets = _context.Timesheets.ToList();
+			var timesheet = _context.Timesheet.ToList();
 
 			return Page();
 		}
